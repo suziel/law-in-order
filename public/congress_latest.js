@@ -1,10 +1,14 @@
 // Filename: public/congress_latest.js
-import { fetchURL_ViaProxy } from "public/config";
+import { fetchURL_ViaProxy } from "public/proxy_calls";
 
 /** TODO:
  * chack date of latest in midnight crawler
  * if take all bills from that date
  * Q: should updated be taken? just proven?
+*/
+/** Useful links:
+ * https://api.congress.gov/
+ * https://www.congress.gov/help/using-data-offsite * 
 */
 // ================== CONFIG ==================
 const BASE  = "https://api.congress.gov/v3/bill/";
@@ -12,7 +16,7 @@ const BASE  = "https://api.congress.gov/v3/bill/";
 
 
 /** EP: Return array of the last X bills PDF URLs (newest first). */
-export async function getLastBillsTests(limit = 3) {
+export async function getLastBillsPdfUrls(limit = 3) {
 
     const targetURL = `${BASE}`;
     const res = await fetchURL_ViaProxy(targetURL);

@@ -1,5 +1,5 @@
 // Filename: public/white_house_latest.js
-import { fetchURL_ViaProxy } from "public/config";
+import { fetchURL_ViaProxy } from "public/proxy_calls";
 
 /** TODO:
  * chack date of latest in midnight crawler

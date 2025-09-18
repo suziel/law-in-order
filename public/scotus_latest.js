@@ -1,6 +1,10 @@
 // Filename: public/scotus_latest.js
-import { fetchURL_ViaProxy } from "public/config";
+import { fetchURL_ViaProxy } from "public/proxy_calls";
 
+/**
+ * consider changing to CourtListener api
+ * https://www.courtlistener.com/api/rest/v3/search/?court=scotus&api-key=46230782559f3fba496432e1c3d9e21f196f8e3d
+ */
 // ================== CONFIG ==================
 const BASE  = "https://www.supremecourt.gov";
 // ============================================
@@ -52,8 +56,8 @@ export function extractFirst_X_Pdfs(html, limit = 5)
 
 
 /** EP: Return array of the last X slip-opinion PDF URLs (newest first). */
-export async function getLastSlipPdfUrls() {
-  const limit = 1; // clamp to 1..10
+export async function getLastSlipPdfUrls(limit = 1) {
+  // clamp limit to 1..10
   const year = 24;//currentScotusTermYY();
   const targetURL = `${BASE}/opinions/slipopinion/${year}`;
   const res = await fetchURL_ViaProxy(targetURL);

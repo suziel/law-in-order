@@ -1,0 +1,149 @@
+import { fetch } from "wix-fetch";
+
+// ================== CONFIG ==================
+const PAGE_FETCHER = "https://fetcher-of-htmls-n-jsons.snupichan282.workers.dev/";
+const AI_GATEWAY = "https://fetcher-of-gemini-responses.snupichan282.workers.dev/";
+const PDF_FETCHER = "https://fetcher-and-64-converter-of-pfds.snupichan282.workers.dev/";
+// ============================================
+
+/** Fetch HTML or JSON for a given URL. */
+
+export async function fetchURL_ViaProxy(targetURL) 
+{  
+    const url = `${PAGE_FETCHER}?url=${encodeURIComponent(targetURL)}`;
+
+    const res = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    });
+
+    if (!res.ok) throw new Error(`Proxy fetch failed: ${res.status}`);
+
+    return res;
+}
+export async function getGeminiResponse(prompt, pdfUrl) {
+    try {
+        // Send the prompt to the Cloudflare Worker via a POST request
+        const response = await fetch(AI_GATEWAY, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              url: pdfUrl,
+              prompt: prompt
+            })
+        });
+        console.log("response.ok ", response.ok);
+        if (response.ok) {
+            const answer = await response.json();
+            console.log("answer: ", answer);
+            return { text: answer.text, error: null };
+        } else {
+            const errorText = await response.text();
+            return { text: null, error: `Error from Cloudflare Worker: ${errorText}` };
+        }
+    } catch (err) {
+        return { text: null, error: `Network or fetch error: ${err.message}` };
+    }
+}
+
+export async function getGeminiResponse_(pdfUrl, prompt) {
+    const requestBody = 
+    {
+      pdfUrl: pdfUrl,
+      prompt: prompt
+    };
+    console.log("requestBody", requestBody);
+    try {
+        // Send the prompt to the Cloudflare Worker via a POST request
+        const response = await fetch(AI_GATEWAY, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },    
+            body: JSON.stringify({
+              pdfUrl: "https://www.govinfo.gov/content/pkg/FR-2025-09-09/pdf/2025-17389.pdf",
+              prompt: "Summarize this in plain language"
+            })
+        });
+        if (response.ok)
+        {
+            
+            const { text } = await response.json();
+            console.log("text: ", text);
+            return { text, error: null };
+        }
+        else {
+          const errorText = await response.text();
+          return { text: null, error: `Error from Cloudflare Worker: ${errorText}` };
+        }
+    }
+    catch (err) {
+          return { text: null, error: `Network or fetch error: ${err.message}`};
+    }
+}
+
+export async function getPdfFromUrl() {
+  const pdfUrl = "https://www.govinfo.gov/content/pkg/FR-2025-09-09/pdf/2025-17389.pdf";
+  try {
+    
+    const response = await fetchURL_ViaProxy(pdfUrl);
+    console.log("response: ", response.text());
+    // Check if the request was successful.
+    if (response.ok) {
+      // Return the entire response object. You'll need to handle the data format
+      // (e.g., as a Blob or ArrayBuffer) in the next step.
+      return response;
+    } else {
+      // If the response was not okay, throw an error with the status.
+      console.error(`Error fetching PDF: Status ${response.status} - ${response.statusText}`);
+      throw new Error(`Failed to fetch PDF from URL: ${pdfUrl}`);
+    }
+  } catch (error) {
+    // Handle network errors or other issues with the fetch call.
+    console.error('Fetch error:', error);
+    throw error;
+  }
+}
+
+
+// Call Cloudflare Worker, get Base64, save to Media Manager
+export async function savePdfFromWorker(fileName = "eo1.pdf") {
+  console.log("fileName: ", fileName);
+  /*const pdfUrl = "https://www.govinfo.gov/content/pkg/FR-2025-09-09/pdf/2025-17389.pdf";
+    const response = await fetch(PDF_FETCHER, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pdfUrl })
+  });
+
+  if (!response.ok) {
+    throw new Error(`Worker error: ${await response.text()}`);
+  }
+
+  const { base64 } = await response.json();
+  console.log("base64: ", base64);
+  // Convert Base64 string to Buffer
+  const buffer = new Uint8Array(atob(base64).split("").map(c => c.charCodeAt(0)));
+  console.log("base64: ", buffer);
+
+  // Upload to Wix Media Manager
+  const { fileUrl } = await mediaManager.upload(
+    "/pdfs/",                               // path
+    buffer,                                 // file content
+    fileName,                               // file name
+    {                                       // options
+      mediaOptions: 
+      {
+        mimeType: "application/pdf",
+        mediaType: "document",
+      }
+    }
+  );
+ */
+  const fileUrl = "pdf";
+  return fileUrl; // Public static URL
+}
