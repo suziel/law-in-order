@@ -22,8 +22,7 @@ export async function getLastBillsPdfUrls(limit = 3) {
     const res = await fetchURL_ViaProxy(targetURL);
     const proxyResponse = await res.json();
     const congressData = JSON.parse(proxyResponse.content);
-
-    //make function to go over bills and return all urls
+    
     // Extract up to limit PDF URLs, converting relative → absolute
     const urls = [];
     for (let i = 0; i < limit; i++) {

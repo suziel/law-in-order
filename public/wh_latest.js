@@ -1,4 +1,4 @@
-// Filename: public/white_house_latest.js
+// Filename: public/wh_latest.js
 import { fetchURL_ViaProxy } from "public/proxy_calls";
 
 /** TODO:

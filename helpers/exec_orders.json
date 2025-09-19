@@ -1,0 +1,264 @@
+{
+  "description": "Documents of presidential document type Executive Order",
+  "count": 1483,
+  "total_pages": 50,
+  "next_page_url": "https://www.federalregister.gov/api/v1/documents?conditions%5Bpresidential_document_type%5D%5B%5D=executive_order&format=json&order=newest&page=2&per_page=10",
+  "results": [
+    {
+      "title": "Strengthening Efforts To Protect U.S. Nationals From Wrongful Detention Abroad",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-17509",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17509/strengthening-efforts-to-protect-us-nationals-from-wrongful-detention-abroad",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-10/pdf/2025-17509.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-17509.pdf?1757430907",
+      "publication_date": "2025-09-10",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Restoring the United States Department of War",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-17508",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17508/restoring-the-united-states-department-of-war",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-10/pdf/2025-17508.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-17508.pdf?1757430907",
+      "publication_date": "2025-09-10",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": [
+                        "https://www.federalregister.gov/api/v1/agencies/538",
+                        {
+                          "agency_url": "https://www.whitehouse.gov/eop/",
+                          "child_ids": [
+                            2,
+                            92,
+                            93,
+                            611,
+                            612,
+                            390,
+                            613
+                          ],
+                          "child_slugs": [
+                            "administration-office-executive-office-of-the-president",
+                            "council-on-environmental-quality",
+                            "counsel-to-the-president",
+                            "intellectual-property-enforcement-coordinator-office",
+                            "national-space-council",
+                            "office-of-national-drug-control-policy",
+                            "office-of-the-national-cyber-director"
+                          ],
+                          "description": "Under authority of the Reorganization Act of 1939 (5 U.S.C. 133-133r, 133t note), various agencies were transferred to the Executive Office of the President by the President's Reorganization Plans I and II of 1939 (5 U.S.C. app.), effective July 1, 1939. Executive Order 8248 of September 8, 1939, established the divisions of the Executive Office and defined their functions. Subsequently, Presidents have used Executive orders, reorganization plans, and legislative initiatives to reorganize the Executive Office to make its composition compatible with the goals of their administrations.",
+                          "id": 538,
+                          "logo": {
+                            "thumb_url": "https://agency-logos.federalregister.gov/538/thumb.jpg?1321893883",
+                            "small_url": "https://agency-logos.federalregister.gov/538/small.jpg?1321893883",
+                            "medium_url": "https://agency-logos.federalregister.gov/538/medium.jpg?1321893883"
+                          },
+                          "name": "Executive Office of the President",
+                          "parent_id": null,
+                          "recent_articles_url": "https://www.federalregister.gov/api/v1/documents?conditions%5Bagency_ids%5D%5B%5D=538&order=newest",
+                          "short_name": "EOP",
+                          "slug": "executive-office-of-the-president",
+                          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president"
+                        }],
+
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Modifying the Scope of Reciprocal Tariffs and Establishing Procedures for Implementing Trade and Security Agreements",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-17507",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/10/2025-17507/modifying-the-scope-of-reciprocal-tariffs-and-establishing-procedures-for-implementing-trade-and",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-10/pdf/2025-17507.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-17507.pdf?1757430907",
+      "publication_date": "2025-09-10",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Implementing the United States-Japan Agreement",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-17389",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/09/2025-17389/implementing-the-united-states-japan-agreement",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-09/pdf/2025-17389.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-17389.pdf?1757344506",
+      "publication_date": "2025-09-09",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Making Federal Architecture Beautiful Again",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16928",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/03/2025-16928/making-federal-architecture-beautiful-again",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-03/pdf/2025-16928.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16928.pdf?1756826108",
+      "publication_date": "2025-09-03",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Further Exclusions From the Federal Labor- Management Relations Program",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16924",
+      "html_url": "https://www.federalregister.gov/documents/2025/09/03/2025-16924/further-exclusions-from-the-federal-labor--management-relations-program",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-09-03/pdf/2025-16924.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16924.pdf?1756826107",
+      "publication_date": "2025-09-03",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Taking Steps To End Cashless Bail To Protect Americans",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16618",
+      "html_url": "https://www.federalregister.gov/documents/2025/08/28/2025-16618/taking-steps-to-end-cashless-bail-to-protect-americans",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-08-28/pdf/2025-16618.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16618.pdf?1756307711",
+      "publication_date": "2025-08-28",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Prosecuting Burning of the American Flag",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16616",
+      "html_url": "https://www.federalregister.gov/documents/2025/08/28/2025-16616/prosecuting-burning-of-the-american-flag",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-08-28/pdf/2025-16616.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16616.pdf?1756307710",
+      "publication_date": "2025-08-28",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Measures To End Cashless Bail and Enforce the Law in the District of Columbia",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16615",
+      "html_url": "https://www.federalregister.gov/documents/2025/08/28/2025-16615/measures-to-end-cashless-bail-and-enforce-the-law-in-the-district-of-columbia",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-08-28/pdf/2025-16615.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16615.pdf?1756307710",
+      "publication_date": "2025-08-28",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    },
+    {
+      "title": "Additional Measures To Address the Crime Emergency in the District of Columbia",
+      "type": "Presidential Document",
+      "abstract": null,
+      "document_number": "2025-16614",
+      "html_url": "https://www.federalregister.gov/documents/2025/08/28/2025-16614/additional-measures-to-address-the-crime-emergency-in-the-district-of-columbia",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2025-08-28/pdf/2025-16614.pdf",
+      "public_inspection_pdf_url": "https://public-inspection.federalregister.gov/2025-16614.pdf?1756307709",
+      "publication_date": "2025-08-28",
+      "agencies": [
+        {
+          "raw_name": "EXECUTIVE OFFICE OF THE PRESIDENT",
+          "name": "Executive Office of the President",
+          "id": 538,
+          "url": "https://www.federalregister.gov/agencies/executive-office-of-the-president",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/538",
+          "parent_id": null,
+          "slug": "executive-office-of-the-president"
+        }
+      ],
+      "excerpts": null
+    }
+  ]
+}
