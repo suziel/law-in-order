@@ -42,8 +42,9 @@ export async function getLatestBillsJson() {
 export async function createCongressBillObj(bill) {
     try {
         
-        console.log("bill url: ", bill.url);
-        const bill_json = await fetchURL_ViaProxy(bill.url);
+        const res = await fetchURL_ViaProxy(bill.url);
+        const proxyResponse = await res.json();
+        const bill_json = (JSON.parse(proxyResponse.content)).bill;
 
         const billObj = {  
             title: bill_json.title, 
@@ -54,23 +55,22 @@ export async function createCongressBillObj(bill) {
             summary: ""
         };
 
-        console.log("bill text Versions: ", bill.textVersions);
         if (bill_json.textVersions) {
             const res_bill_text = await fetchURL_ViaProxy(bill_json.textVersions.url);
             const bill_texts_json = JSON.parse((await res_bill_text.json()).content);
             // assumng here - first is latest, can search "type": "Enrolled Bill" in text versions array.
             const pdf_url = bill_texts_json.textVersions[0].formats.find(txt => txt.type === "PDF");
             // if no pdf - throw error
-            billObj.pdf_url = pdf_url
+            billObj.pdf_url = pdf_url.url
             // Get summary from Gemini
-            billObj.summary = await getGeminiResponse(`${PROMPT}`, pdf_url);
+            billObj.summary = await getGeminiResponse(`${PROMPT}`, billObj.pdf_url);
         }
-
+        console.log("billObj: ", billObj);
         return billObj;
     } 
     catch (err) {
         console.error("Error creating ExecOrder object:", err);
-        throw new Error(`Failed to create executive order object for: ${execOrder.title}`);
+        throw new Error(`Failed to create executive order object for: ${bill.url}`);
     }
 }
 
