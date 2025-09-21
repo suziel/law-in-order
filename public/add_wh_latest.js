@@ -1,6 +1,14 @@
 // Filename: public/add_wh_latest.js
-import { fetchURL_ViaProxy } from "public/proxyCalls";
+import { fetchURL_ViaProxy, getGeminiResponse } from "public/proxy_calls";
 import wixData from 'wix-data';
+
+/** TODO:
+ * chack date of latest in midnight crawler
+ * if take all orders from that date
+ * Has few days delay
+ * assuming BASE API will always give the same set of parameters
+*/
+// https://www.federalregister.gov/developers/documentation/api/v1#/
 
 export const BASE  = "https://www.federalregister.gov/api/v1/documents.json?per_page=10&order=newest&conditions[presidential_document_type][]=executive_order";
 export const PROMPT = "Please summarize the attached text. " +
@@ -13,7 +21,7 @@ export const PROMPT = "Please summarize the attached text. " +
 // Fetch latest executive orders JSON
 export async function getLatestOrdersJson() {
     try {
-        const res = await fetchURL_ViaProxy(BASE);
+        const res = await fetchURL_ViaProxy(`${BASE}`);
         const proxyResponse = await res.json();
         const whData = JSON.parse(proxyResponse.content);
         return whData.results;
@@ -28,14 +36,13 @@ export async function getLatestOrdersJson() {
 export async function createExecOrderObj(execOrder) {
     try {
         const execOrderObj = {  
-            Title: execOrder.title, 
-            pdfUrl: execOrder.pdf_url,
-            PublicationDate: execOrder.publication_date
+            title: execOrder.title, 
+            pdf_url: execOrder.pdf_url,
+            publication_date: execOrder.publication_date
         };
 
         // Get summary from Gemini
-        const summaryRes = await getGeminiResponse(PROMPT, execOrderObj.pdfUrl);
-        execOrderObj.summary = summaryRes.text;
+        execOrderObj.summary = await getGeminiResponse(`${PROMPT}`, execOrderObj.pdf_url);
 
         return execOrderObj;
     } 
@@ -46,7 +53,7 @@ export async function createExecOrderObj(execOrder) {
 }
 
 // Add multiple executive orders to the Wix collection
-export async function addExecOrdersToCollection(limit = 1) {    
+export async function addExecOrdersToCollection(limit = 5) {    
     try {
         const latestOrders = await getLatestOrdersJson();
 
@@ -58,7 +65,7 @@ export async function addExecOrdersToCollection(limit = 1) {
         for (let i = 0; i < max; i++) {
             try {
                 const execOrderObj = await createExecOrderObj(latestOrders[i]);
-                const res = await wixData.insert("ExecOrders", execOrderObj);
+                const res = await wixData.insert("ExecutiveOrders", execOrderObj);
                 inserted.push(res);
             } 
             catch (innerErr) {

@@ -29,23 +29,29 @@ export async function getGeminiResponse(prompt, pdfUrl) {
         const response = await fetch(AI_GATEWAY, {
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              url: pdfUrl,
-              prompt: prompt
+                url: pdfUrl,
+                prompt: prompt
             })
         });
-        console.log("response.ok ", response.ok);
-        if (response.ok) {
-            const answer = await response.json();
-            console.log("answer: ", answer);
-            return { text: answer.text, error: null };
-        } else {
+
+        console.log("response.ok:", response.ok);
+
+        if (!response.ok) {
             const errorText = await response.text();
-            return { text: null, error: `Error from Cloudflare Worker: ${errorText}` };
+            throw new Error(`Error from Cloudflare Worker: ${errorText}`);
         }
+
+        const answer = await response.json();
+        console.log("answer:", answer);
+
+        // Return only the text
+        return answer.text;
+
     } catch (err) {
-        return { text: null, error: `Network or fetch error: ${err.message}` };
+        throw new Error(`Network or fetch error: ${err.message}`);
     }
 }
+
