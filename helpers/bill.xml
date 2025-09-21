@@ -1,0 +1,54 @@
+<api-root>
+	<bill>
+		<number> 2853 </number>
+		<updateDate> 2025-09-18T10:56:21Z </updateDate>
+		<updateDateIncludingText> 2025-09-18T10:56:21Z </updateDateIncludingText>
+		<originChamber> Senate </originChamber>
+		<originChamberCode> S </originChamberCode>
+		<type> S </type>
+		<introducedDate> 2025-09-17 </introducedDate>
+		<congress> 119 </congress>
+		<legislationUrl> https://www.congress.gov/bill/119th-congress/senate-bill/2853 </legislationUrl>
+		<committees>
+			<count> 1 </count>
+			<url> https://api.congress.gov/v3/bill/119/s/2853/committees?format=xml </url>
+		</committees>
+		<actions>
+			<count> 2 </count>
+			<url> https://api.congress.gov/v3/bill/119/s/2853/actions?format=xml </url>
+		</actions>
+		<sponsors>
+			<item>
+				<bioguideId> M000934 </bioguideId>
+				<fullName> Sen. Moran, Jerry [R-KS] </fullName>
+				<firstName> Jerry </firstName>
+				<lastName> Moran </lastName>
+				<party> R </party>
+				<state> KS </state>
+				<url> https://api.congress.gov/v3/member/M000934?format=xml </url>
+				<isByRequest> N </isByRequest>
+			</item>
+		</sponsors>
+		<cosponsors>
+			<countIncludingWithdrawnCosponsors> 1 </countIncludingWithdrawnCosponsors>
+			<count> 1 </count>
+			<url> https://api.congress.gov/v3/bill/119/s/2853/cosponsors?format=xml </url>
+		</cosponsors>
+		<title> A bill to amend title 38, United States Code, to extend certain authorities and requirements relating to health care and benefits furnished by the Department of Veterans Affairs, and for other purposes. </title>
+		<titles>
+			<count> 2 </count>
+			<url> https://api.congress.gov/v3/bill/119/s/2853/titles?format=xml </url>
+		</titles>
+		<latestAction>
+			<actionDate> 2025-09-17 </actionDate>
+			<text> Read twice and referred to the Committee on Veterans' Affairs. </text>
+		</latestAction>
+	</bill>
+	<request>
+		<congress> 119 </congress>
+		<billType> s </billType>
+		<billNumber> 2853 </billNumber>
+		<contentType> application/xml </contentType>
+		<format> xml </format>
+	</request>
+</api-root>

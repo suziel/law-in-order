@@ -22,8 +22,9 @@ export async function getLastBillsPdfUrls(limit = 3) {
     const res = await fetchURL_ViaProxy(targetURL);
     const proxyResponse = await res.json();
     const congressData = JSON.parse(proxyResponse.content);
-    
-    // Extract up to limit PDF URLs, converting relative → absolute
+    // look for textVersions. c
+    // heck if exists since some are just changes
+    // Extract up to limit PDF URLs, converting relative → absolute 
     const urls = [];
     for (let i = 0; i < limit; i++) {
 

@@ -1,0 +1,321 @@
+
+
+<api-root>
+	<bills>
+		<bill>
+			<congress> 119 </congress>
+			<type> S </type>
+			<originChamber> Senate </originChamber>
+			<originChamberCode> S </originChamberCode>
+			<number> 2853 </number>
+			<url> https://api.congress.gov/v3/bill/119/s/2853?format=xml </url>
+			<title> A bill to amend title 38, United States Code, to extend certain authorities and requirements relating to health care and benefits furnished by the Department of Veterans Affairs, and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Read twice and referred to the Committee on Veterans' Affairs. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HRES </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 713 </number>
+			<url> https://api.congress.gov/v3/bill/119/hres/713?format=xml </url>
+			<title> Censuring Representative Ilhan Omar of Minnesota and removing her from the Committee on Education and Workforce and the Committee on the Budget. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Motion to reconsider laid on the table Agreed to without objection. </text>
+				<actionTime> 18:29:05 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 4256 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/4256?format=xml </url>
+			<title> Digital Coast Reauthorization Act of 2025 </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 5143 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/5143?format=xml </url>
+			<title> District of Columbia Policing Protection Act </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Motion to reconsider laid on the table Agreed to without objection. </text>
+				<actionTime> 18:17:14 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 3872 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/3872?format=xml </url>
+			<title> MERICA Act of 2025 </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported (Amended) by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 3692 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/3692?format=xml </url>
+			<title> To reauthorize the Young Fishermen's Development Act. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 5125 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/5125?format=xml </url>
+			<title> District of Columbia Judicial Nominations Reform Act </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Motion to reconsider laid on the table Agreed to without objection. </text>
+				<actionTime> 18:11:08 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 2916 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/2916?format=xml </url>
+			<title> To authorize, ratify, and confirm the Agreement of Settlement and Compromise to Resolve the Akwesasne Mohawk Land Claim in the State of New York, and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 2815 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/2815?format=xml </url>
+			<title> Cape Fox Land Entitlement Finalization Act of 2025 </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported (Amended) by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 2306 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/2306?format=xml </url>
+			<title> The Adams Memorial-Great American Heroes Act </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported (Amended) by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HRES </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 707 </number>
+			<url> https://api.congress.gov/v3/bill/119/hres/707?format=xml </url>
+			<title> Providing for consideration of the bill (H.R. 4922) to limit youth offender status in the District of Columbia to individuals 18 years of age or younger, to direct the Attorney General of the District of Columbia to establish and operate a publicly accessible website containing updated statistics on juvenile crime in the District of Columbia, to amend the District of Columbia Home Rule Act to prohibit the Council of the District of Columbia from enacting changes to existing criminal liability sentences, and for other purposes; providing for consideration of the bill (H.R. 5143) to establish standards for law enforcement officers in the District of Columbia to engage in vehicular pursuits of suspects, and for other purposes; providing for consideration of the bill (H.R. 5140) to lower the age at which a minor may be tried as an adult for certain criminal offenses in the District of Columbia to 14 years of age; providing for consideration of the bill (H.R. 5125) to amend the District of Columbia Home Rule Act to terminate the District of Columbia Judicial Nomination Commission, and for other purposes; providing for consideration of the bill (H.R. 1047) to require the Federal Energy Regulatory Commission to reform the interconnection queue process for the prioritization and approval of certain projects, and for other purposes; providing for consideration of the bill (H.R. 3015) to reestablish the National Coal Council in the Department of Energy to provide advice and recommendations to the Secretary of Energy on matters related to coal and the coal industry, and for other purposes; providing for consideration of the bill (H.R. 3062) to establish a more uniform, transparent, and modern process to authorize the construction, connection, operation, and maintenance of international border-crossing facilities for the import and export of oil and natural gas and the transmission of electricity; and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Pursuant to the provisions of H.Res. 722, H.Res. 707 is amended. </text>
+				<actionTime> 18:05:25 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HRES </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 722 </number>
+			<url> https://api.congress.gov/v3/bill/119/hres/722?format=xml </url>
+			<title> Providing for consideration of the bill (H.R. 5371) making continuing appropriations and extensions for fiscal year 2026, and for other purposes; providing for consideration of the resolution (H. Res. 719) honoring the life and legacy of Charles "Charlie" James Kirk; and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Motion to reconsider laid on the table Agreed to without objection. </text>
+				<actionTime> 18:05:24 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HRES </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 719 </number>
+			<url> https://api.congress.gov/v3/bill/119/hres/719?format=xml </url>
+			<title> Honoring the life and legacy of Charles "Charlie" James Kirk. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Rule H. Res. 722 passed House. </text>
+				<actionTime> 18:05:23 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 1366 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/1366?format=xml </url>
+			<title> Mining Regulatory Clarity Act of 2025 </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported (Amended) by the Yeas and Nays: 25 - 17. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> SRES </type>
+			<originChamber> Senate </originChamber>
+			<originChamberCode> S </originChamberCode>
+			<number> 400 </number>
+			<url> https://api.congress.gov/v3/bill/119/sres/400?format=xml </url>
+			<title> A resolution expressing support for designation of the week of September 14 through 20, 2025, as "National Adult Education and Family Literacy Week". </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> S </type>
+			<originChamber> Senate </originChamber>
+			<originChamberCode> S </originChamberCode>
+			<number> 2852 </number>
+			<url> https://api.congress.gov/v3/bill/119/s/2852?format=xml </url>
+			<title> A bill to prohibit Federal officials from owning covered investments, and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Read twice and referred to the Committee on Finance. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 4090 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/4090?format=xml </url>
+			<title> To codify certain provisions of certain Executive Orders relating to domestic mining and hardrock mineral resources, and for other purposes. </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Ordered to be Reported (Amended) by the Yeas and Nays: 26 - 16. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 3616 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/3616?format=xml </url>
+			<title> Reliable Power Act </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Placed on the Union Calendar, Calendar No. 256. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 3157 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/3157?format=xml </url>
+			<title> State Energy Accountability Act </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Placed on the Union Calendar, Calendar No. 255. </text>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+		<bill>
+			<congress> 119 </congress>
+			<type> HR </type>
+			<originChamber> House </originChamber>
+			<originChamberCode> H </originChamberCode>
+			<number> 3481 </number>
+			<url> https://api.congress.gov/v3/bill/119/hr/3481?format=xml </url>
+			<title> Delivering Digitally to Our Veterans Act of 2025 </title>
+			<updateDateIncludingText> 2025-09-18 </updateDateIncludingText>
+			<latestAction>
+				<actionDate> 2025-09-17 </actionDate>
+				<text> Motion to reconsider laid on the table Agreed to without objection. </text>
+				<actionTime> 17:30:23 </actionTime>
+			</latestAction>
+			<updateDate> 2025-09-18 </updateDate>
+		</bill>
+	</bills>
+	<pagination>
+		<count> 420818 </count>
+		<next> https://api.congress.gov/v3/bill?offset=20&limit=20&format=xml </next>
+	</pagination>
+	<request>
+		<contentType> application/xml </contentType>
+		<format> xml </format>
+	</request>
+</api-root>
