@@ -1,0 +1,5 @@
+ToDO:
+
+1. Midnight crawler
+2. Adding only relevant items
+3. change supreme court to api
