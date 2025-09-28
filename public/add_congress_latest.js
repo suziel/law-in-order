@@ -75,7 +75,7 @@ export async function createCongressBillObj(bill) {
 }
 
 // Add multiple executive orders to the Wix collection
-export async function addBillToCollection(limit = 5) {    
+export async function addBillToCollection(limit = 6) {    
     try {
         const bills = await getLatestBillsJson();
 

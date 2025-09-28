@@ -3,3 +3,8 @@ ToDO:
 1. Midnight crawler
 2. Adding only relevant items
 3. change supreme court to api
+4. details in the table
+    1. scotus: date - which? status?
+5. gemini model name - flexible. not hard coded
+6. large files
+7. move to backend code
